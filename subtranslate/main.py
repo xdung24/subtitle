@@ -41,8 +41,8 @@ lindex.append(-1)
 for i in range(len(lindex) - 1):
     s = lindex[i]  # current sub index
     n = lindex[i + 1]  # next sub index
-    sout.write(sin[s - 1] + '\n')
-    sout.write(sin[s] + '\n')
+#    sout.write(sin[s - 1] + '\n')
+#    sout.write(sin[s] + '\n')
     sub = ''
     for l in range((s + 1), (n - 1)):
         sub += sin[l] + ' '
@@ -50,6 +50,9 @@ for i in range(len(lindex) - 1):
     translated_sub = translator.translate(sub, src=orig, dest=tran).text
     time.sleep(1)
     print("[", i+1, "/", len(lindex), "] ", sub, " => ", translated_sub)
+
+    sout.write(sin[s - 1] + '\n')
+    sout.write(sin[s] + '\n')
 
     # place line breaks
     istart, iend = 0, 0
