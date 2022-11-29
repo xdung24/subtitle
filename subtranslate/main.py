@@ -1,4 +1,5 @@
 from googletrans import Translator
+from httpx import Timeout
 import argparse
 import time
 
@@ -19,7 +20,10 @@ print('Target language:', args.des_lang)
 print('Input srt file:', args.input_srt)
 print('Output srt file:', args.output_srt)
 
-translator = Translator()
+user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+
+translator = Translator(user_agent=user_agent,timeout=Timeout(15))
+
 orig = args.src_lang
 tran = args.des_lang
 sin = open(args.input_srt, 'r')
