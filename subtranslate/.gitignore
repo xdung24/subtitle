@@ -1,0 +1,11 @@
+# phpstorm project files
+.idea
+__pycache__
+
+.DS_Store
+# LOCAL FILES
+local_*.py
+local_*
+
+venv
+
