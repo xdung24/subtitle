@@ -4,8 +4,6 @@ Giant.E03.HDTV.XViD-HAN.srt
 Giant.E04.100517.HDTV.XViD-HAN.srt
 Giant.E05.100518.HDTV.XViD-HAN.srt
 Giant.E10.100607.HDTV.XViD-HAN.srt
-Giant.E06.100524.HDTV.XViD-HAN.srt
-
 Giant.E07.100525.HDTV.XViD-HAN.srt
 Giant.E08.XviD-HAN.srt
 Giant.E09.100601.HDTV.XViD-HAN.srt
@@ -59,3 +57,4 @@ Giant.E57.XViD-HANrel.srt
 Giant.E58.XViD-HANrel.srt
 Giant.E59.XViD-HANrel.srt
 Giant.E60.END.XViD-HANrel.srt
+Giant.E06.100524.HDTV.XViD-HAN.srt
