@@ -49,3 +49,13 @@ Giant.E47.XViD-HANrel.srt
 Giant.E48.XViD-HANrel.srt
 Giant.E49.XViD-HANrel.srt
 Giant.E50.XViD-HANrel.srt
+Giant.E51.XViD-HANrel.srt
+Giant.E52.XViD-HANrel.srt
+Giant.E53.XViD-HANrel.srt
+Giant.E54.XViD-HANrel.srt
+Giant.E55.XViD-HANrel.srt
+Giant.E56.XViD-HANrel.srt
+Giant.E57.XViD-HANrel.srt
+Giant.E58.XViD-HANrel.srt
+Giant.E59.XViD-HANrel.srt
+Giant.E60.END.XViD-HANrel.srt
