@@ -9,6 +9,8 @@ donefile="${folder}/done.txt"
 srclang=en
 deslang=vi
 
+mkdir -p $folder/$deslang
+
 i=0
 source ${PWD}/subtranslate/venv/bin/activate
 readarray -t outarr < $outfile
