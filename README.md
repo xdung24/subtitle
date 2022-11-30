@@ -1,8 +1,19 @@
 # subtitle
 This repo contains subtitle from many source and auto-translated
 ```bash
-# sample
+# giant 2010
 bash autosub.sh moveies/giant-2010/
+```
+```bash
 # run in background 
 nohup bash autosub.sh movies/giant-2010/ >&1 &
+```
+
+```bash
+# to dear myself 2022
+bash autosub.sh moveies/to-dear-myself-2022/
+```
+```bash
+# run in background 
+nohup bash autosub.sh movies/to-dear-myself-2022/ >&1 &
 ```
