@@ -44,3 +44,8 @@ Giant.E42.XViD-HANrel.srt
 Giant.E43.XViD-HANrel.srt
 Giant.E44.XViD-HANrel.srt
 Giant.E45.XViD-HANrel.srt
+Giant.E46.XViD-HANrel.srt
+Giant.E47.XViD-HANrel.srt
+Giant.E48.XViD-HANrel.srt
+Giant.E49.XViD-HANrel.srt
+Giant.E50.XViD-HANrel.srt
