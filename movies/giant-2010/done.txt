@@ -31,3 +31,16 @@ Giant.E29.XViD-HAN.srt
 Giant.E30.XViD-HAN.srt
 Giant.E31.XViD-HAN.srt
 Giant.E32.XViD-HAN.srt
+Giant.E33.XviD-HAN.srt
+Giant.E34.XViD-HAN.srt
+Giant.E35.XViD-HANrel.srt
+Giant.E36.XViD-HANrel.srt
+Giant.E37.XViD-HANrel.srt
+Giant.E38.XViD-HANrel.srt
+Giant.E39.XViD-HANrel.srt
+Giant.E40.XViD-HANrel.srt
+Giant.E41.XViD-HANrel.srt
+Giant.E42.XViD-HANrel.srt
+Giant.E43.XViD-HANrel.srt
+Giant.E44.XViD-HANrel.srt
+Giant.E45.XViD-HANrel.srt
