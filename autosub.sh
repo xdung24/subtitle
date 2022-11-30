@@ -16,8 +16,8 @@ cat $infile | while read line
 do
   echo '['$((i+1))']' $line
   name=${outarr[${i}]}
-  src='"'$folder$srclang/$line'"'
-  des='"'$folder$deslang/${name}'"'
+  src='"'$folder/$srclang/$line'"'
+  des='"'$folder/$deslang/${name}'"'
   cmd="python3 ./subtranslate/main.py --src-lang=$srclang --des-lang=$deslang --input-srt=$src --output-srt=$des"
   if grep -Fx "$name" $donefile
   then
