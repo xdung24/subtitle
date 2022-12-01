@@ -15,5 +15,5 @@ bash autosub.sh movies/to.dear.myself-2020
 ```
 ```bash
 # run in background 
-nohup bash autosub.sh movies/to.dear.myself.2020 >&1 &
+nohup bash autosub.sh movies/to.dear.myself-2020 >&1 &
 ```
