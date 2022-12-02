@@ -38,7 +38,8 @@ for l in range(len(sin)):
 lindex.append(-1)
 
 # compose out document with translation
-for i in range(len(lindex) - 1):
+n=len(lindex) - 1
+for i in range(n):
     s = lindex[i]  # current sub index
     n = lindex[i + 1]  # next sub index
 #    sout.write(sin[s - 1] + '\n')
@@ -49,7 +50,7 @@ for i in range(len(lindex) - 1):
     # translate + time delay
     translated_sub = translator.translate(sub, src=orig, dest=tran).text
     time.sleep(1)
-    print("[", i+1, "/", len(lindex), "] ", sub, " => ", translated_sub)
+    print("[", i+1, "/", n, "] ", sub, " => ", translated_sub)
 
     sout.write(sin[s - 1] + '\n')
     sout.write(sin[s] + '\n')
