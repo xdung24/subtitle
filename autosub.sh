@@ -1,16 +1,28 @@
 #!/bin/bash
 
-#folder="${PWD}/movies/giant-2010"
-folder=${PWD}/$1
-infile="${folder}/in.txt"
-outfile="${folder}/out.txt"
-donefile="${folder}/done.txt"
+### Read config
+folder=${PWD}/movies/$1
+[ ! -d $folder ] && echo "Directory $folder DOES NOT exists." && exit
 
-srclang=en
-deslang=vi
-
+srclangfile="${folder}/src.txt"
+deslangfile="${folder}/des.txt"
+[ ! -f $srclangfile ] && echo "File $srclangfile DOES NOT exists." && exit
+[ ! -f $deslangfile ] && echo "File $deslangfile DOES NOT exists." && exit
+srclang=$(head -n 1 $srclangfile)
+deslang=$(head -n 1 $deslangfile)
+echo 'source language:'$srclang
+echo 'destination language:'$deslang
+[ ! -d $folder/$srclang ] && echo "Directory $folder/$srclang DOES NOT exists." && exit
 mkdir -p $folder/$deslang
 
+infile="${folder}/in.txt"
+outfile="${folder}/out.txt"
+[ ! -f $infile ] && echo "File $infile DOES NOT exists." && exit
+[ ! -f $outfile ] && echo "File $outfile DOES NOT exists." && exit
+
+donefile="${folder}/done.txt"
+
+### START
 i=0
 source ${PWD}/subtranslate/venv/bin/activate
 readarray -t outarr < $outfile
