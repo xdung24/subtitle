@@ -66,9 +66,15 @@ for i in range(total):
     for l in range((s + 1), (n - 1)):
         sub += sin[l] + ' '
     # translate + time delay
-    # translated_sub = translator.translate(sub, src=orig, dest=tran).text
-    # time.sleep(1)
-    translated_sub = translate_en2vi(sub)
+    translated_sub = ''
+
+    # use vinai translator for en/vi
+    # for other use google translate
+    if orig == 'en' and tran == 'vi':
+        translated_sub = translate_en2vi(sub)
+    else:
+        translated_sub = translator.translate(sub, src=orig, dest=tran).text
+        time.sleep(1)  # throttle requests to avoid getting banned
     print("[", i+1, "/", total, "] ", sub, " => ", translated_sub)
 
     sout.write(sin[s - 1] + '\n')
