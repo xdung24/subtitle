@@ -65,11 +65,10 @@ for i in range(total):
     sub = ''
     for l in range((s + 1), (n - 1)):
         sub += sin[l] + ' '
-    # translate + time delay
-    translated_sub = ''
 
     # use vinai translator for en/vi
     # for other use google translate
+        translated_sub = ''
     if orig == 'en' and tran == 'vi':
         translated_sub = translate_en2vi(sub)
     else:
