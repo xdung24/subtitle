@@ -26,10 +26,10 @@ translator = Translator(user_agent=user_agent,timeout=Timeout(15))
 
 orig = args.src_lang
 tran = args.des_lang
-sin = open(args.input_srt, 'r')
+sinfile = open(args.input_srt, 'r')
 sout = open(args.output_srt, 'w')
 
-sin = (sin.read()).splitlines()
+sin = (sinfile.read()).splitlines()
 lindex = []
 
 # make list of line indexes that contain the timing of a new subtitle entry
@@ -42,8 +42,8 @@ total=len(lindex) - 1
 for i in range(total):
     s = lindex[i]  # current sub index
     n = lindex[i + 1]  # next sub index
-#    sout.write(sin[s - 1] + '\n')
-#    sout.write(sin[s] + '\n')
+    if n == -1:
+        n=len(sin)
     sub = ''
     for l in range((s + 1), (n - 1)):
         sub += sin[l] + ' '
@@ -66,5 +66,5 @@ for i in range(total):
             break
     sout.write(translated_sub[istart:] + '\n\n')
 
-sin.close()
+sinfile.close()
 sout.close()
